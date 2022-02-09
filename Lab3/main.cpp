@@ -17,6 +17,7 @@ int main()
 		std::cout << "Press 1 for an instance of Show\nPress 2 for an instance of Movie\nPress 3 for an instance of TV Show\nPress 4 for an instance of a MOVIE declared as a Show\nPress 5 for an instance of a TV Show declared as a Show\n";
 		int option;
 		std::cin >> option;
+		cin.ignore();
 		switch (option)
 		{
 		case 1:
