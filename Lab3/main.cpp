@@ -21,7 +21,7 @@ int main()
 		switch (option)
 		{
 		case 1:
-			std::cout << "Enter the title and description of the show: " << endl;
+			std::cout << "Enter the title and description of the show. Press 'enter' after every entry: " << endl;
 			std::getline(std::cin, buffer1);
 			std::getline(std::cin, buffer2);
 			show1 = Show(buffer1, buffer2);
@@ -29,7 +29,7 @@ int main()
 			cout << "Play is not defined for the Show base class" << std::endl;
 			break;
 		case 2:
-			std::cout << "Enter the title and description of the movie, and the opening credits: ";
+			std::cout << "Enter the title and description of the movie, and the opening credits. Press 'enter' after every entry: ";
 			std::getline(std::cin, buffer1);
 			std::getline(std::cin, buffer2);
 			std::getline(std::cin, buffer3);
@@ -38,15 +38,15 @@ int main()
 			movie1.play();
 			break;
 		case 3:
-			std::cout << "Enter the title and description of the TV show: ";
+			std::cout << "Enter the title and description of the TV show. Press 'enter' after every entry: ";
 			std::getline(std::cin, buffer1);
 			std::getline(std::cin, buffer2);
 			TVShow1 = TVShow(buffer1, buffer2);
-			movie1.details();
-			movie1.play();
+			TVShow1.details();
+			TVShow1.play();
 			break;
 		case 4:
-			std::cout << "Enter the title and description of the movie, and the opening credits: ";
+			std::cout << "Enter the title and description of the movie, and the opening credits. Press 'enter' after every entry: ";
 			std::getline(std::cin, buffer1);
 			std::getline(std::cin, buffer2);
 			std::getline(std::cin, buffer3);
@@ -55,7 +55,7 @@ int main()
 			show1.play();
 			break;
 		case 5:
-			std::cout << "Enter the title and description of the TV show: ";
+			std::cout << "Enter the title and description of the TV show. Press 'enter' after every entry: ";
 			std::getline(std::cin, buffer1);
 			std::getline(std::cin, buffer2);
 			show1 = TVShow(buffer1, buffer2);
